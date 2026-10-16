@@ -1,0 +1,46 @@
+# ---------- Secrets (NEVER commit) ----------
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ---------- Virtual environments ----------
+myenv/
+venv/
+.venv/
+env/
+
+# ---------- Runtime data (private / generated / copyrighted) ----------
+# Keep the folders (via .gitkeep) but not their contents.
+data/faiss_index/*
+data/uploads/*
+data/pdf_outputs/*
+data/study_materials/*
+!data/faiss_index/.gitkeep
+!data/uploads/.gitkeep
+!data/pdf_outputs/.gitkeep
+!data/study_materials/.gitkeep
+
+# Local databases (contain chat history)
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+
+# ---------- Editors / OS ----------
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# ---------- Scratch files ----------
+test_output_check.pdf
